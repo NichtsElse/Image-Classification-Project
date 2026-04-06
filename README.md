@@ -30,11 +30,6 @@ This project is designed to classify images using the Intel Image Classification
 3. Install dependencies: `pip install -r requirements.txt`
 4. Train the model: `python Tugas_akhir.ipynb`
 
-### Running locally
-1. Run the web application: `python app.py`
-2. Open a web browser and navigate to `http://localhost:5000`
-3. Upload an image and receive classification results
-
 ## 💻 Usage
 1. Upload an image to the web application
 2. The application will classify the image using the trained model
