@@ -1,54 +1,71 @@
 # 🧠 Image Classification Project
-The Image Classification Project is designed to classify images using the Intel Image Classification dataset. This project serves as a comprehensive workflow from data exploration to model deployment, utilizing a wide range of libraries and tools for data science, machine learning, and web development. The core functionality of this project is centered around setting up the environment for an image classification task, including importing necessary libraries, loading the dataset, and preparing for model training and evaluation.
+This project is designed to classify images using the Intel Image Classification dataset. It utilizes a range of technologies, including TensorFlow, Keras, and TensorFlow Lite, to create a robust and efficient image classification model. The project's core features include data loading, model training, and deployment, making it a comprehensive solution for image classification tasks.
 
 ## 🚀 Features
-- **Image Augmentation**: Utilizes `albumentations` for image augmentation to enhance the dataset.
-- **Data Visualization**: Employs `bokeh` and `bqplot` for data visualization to understand the dataset and model performance.
-- **Model Development**: Allows for model selection, hyperparameter tuning, and training for the image classification task.
-- **Interactive Development**: Facilitates interactive development and experimentation using Jupyter Notebook.
+- **Image Classification**: The project uses a pre-trained EfficientNetB0 model for image classification, which is known for its efficiency and accuracy.
+- **Data Loading**: The project loads data from the Intel Image Classification dataset, which contains a wide range of images for training and testing.
+- **Model Training**: The project trains a model using the loaded data, utilizing TensorFlow and Keras for the training process.
+- **Model Deployment**: The project deploys the trained model using TensorFlow Lite, making it suitable for mobile and embedded devices.
+- **Web Application**: The project integrates with a web application, allowing users to upload images and receive classification results.
 
 ## 🛠️ Tech Stack
-- **Python**: The primary programming language used for the project.
-- **Jupyter Notebook**: The environment for interactive development and experimentation.
-- **albumentations**: For image augmentation.
-- **bokeh** and **bqplot**: For data visualization.
-- **beautifulsoup4**: For web scraping, if needed.
-- **astropy**: For astronomy-related data processing.
-- **aiohttp**: For asynchronous HTTP requests.
-- **bleach**: For sanitizing HTML and XML.
+- **Frontend**: JavaScript, HTML, CSS
+- **Backend**: Python, TensorFlow, Keras
+- **Database**: None
+- **AI Tools**: TensorFlow, Keras, TensorFlow Lite
+- **Build Tools**: None
+- **Dependencies**: `absl-py`, `accelerate`, `aiohttp`, `albumentations`, `astropy`, `bokeh`, `bqplot`, `certifi`, `cffi`, `chardet`, and many others
 
 ## 📦 Installation
 ### Prerequisites
-- Python installed on your system.
-- Jupyter Notebook installed.
-- Necessary packages and libraries installed (listed in the `Tugas_akhir.ipynb` file).
+- Python 3.8 or later
+- TensorFlow 2.4 or later
+- Keras 2.4 or later
+- TensorFlow Lite 2.4 or later
+- `requirements.txt` file containing all dependencies
 
-### Installation Steps
-1. Clone the repository to your local machine.
-2. Install the necessary packages and libraries using `pip install -r requirements.txt`.
-3. Open the `Tugas_akhir.ipynb` file in Jupyter Notebook.
+### Installation
+1. Clone the repository: `git clone https://github.com/username/repository.git`
+2. Navigate to the repository: `cd repository`
+3. Install dependencies: `pip install -r requirements.txt`
+4. Train the model: `python Tugas_akhir.ipynb`
+
+### Running locally
+1. Run the web application: `python app.py`
+2. Open a web browser and navigate to `http://localhost:5000`
+3. Upload an image and receive classification results
 
 ## 💻 Usage
-1. Open the `Tugas_akhir.ipynb` file in Jupyter Notebook.
-2. Run the cells to import necessary libraries and load the dataset.
-3. Experiment with different models and hyperparameters for the image classification task.
+1. Upload an image to the web application
+2. The application will classify the image using the trained model
+3. The classification results will be displayed on the web page
 
 ## 📂 Project Structure
-```
-Project
+```markdown
+.
 ├── Tugas_akhir.ipynb
+├── tfjs_model
+│   └── model.json
+├── tflite
+│   └── model_name.tflite
+├── saved_model
+│   └── saved_model.pb
+├── app.py
 ├── requirements.txt
-├── dataset
-│   ├── train
-│   ├── test
-│   └── validation
-├── models
-│   ├── model1.py
-│   ├── model2.py
-│   └── ...
-├── utils
-│   ├── data_utils.py
-│   ├── model_utils.py
-│   └── ...
 └── README.md
 ```
+
+## 📸 Screenshots
+
+## 🤝 Contributing
+Contributions are welcome! Please submit a pull request with your changes and a brief description of what you've added or fixed.
+
+## 📝 License
+This project is licensed under the MIT License.
+
+## 📬 Contact
+For questions or concerns, please contact us at [username@email.com](mailto:username@email.com).
+
+## 💖 Thanks Message
+Thank you for using our image classification project! We hope it helps you with your image classification needs.
+This is written by [readme.ai](https://readme-generator-phi.vercel.app/)
